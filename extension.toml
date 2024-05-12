@@ -1,0 +1,16 @@
+authors = ["d1y <chenhonzhou@gmail.com>"]
+description = "Nginx support"
+id = "nginx"
+name = "Nginx"
+repository = "https://github.com/d1y/nginx-zed"
+schema_version = 1
+version = "0.0.1"
+languages = ["languages/nginx"]
+
+[grammars.nginx]
+repository = "https://gitlab.com/joncoole/tree-sitter-nginx"
+rev = "b4b61db443602b69410ab469c122c01b1e685aa0"
+
+[language_servers.nginx]
+name = "nginx"
+language = "Nginx"

@@ -1,0 +1,9 @@
+name = "Nginx"
+grammar = "nginx"
+path_suffixes = ["nginx.conf"]
+line_comments = ["# "]
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = ["comment", "string"] },
+    { start = "'", end = "'", close = true, newline = false, not_in = ["comment", "string"] },
+]
